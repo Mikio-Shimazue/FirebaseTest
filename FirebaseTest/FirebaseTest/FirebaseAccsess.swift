@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import FirebaseDatabase
+
+class FirebaseAccess {
+  
+  var ref: DatabaseReference! = Database.database().reference()
+  
+  func setData() {
+    ref.child("users").setValue(["username": "ame"])
+  }
+}

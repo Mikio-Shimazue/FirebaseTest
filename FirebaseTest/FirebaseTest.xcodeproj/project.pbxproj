@@ -11,6 +11,7 @@
 		8BED50DE2A1B8780009A62F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED50DD2A1B8780009A62F8 /* ContentView.swift */; };
 		8BED50E02A1B8782009A62F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BED50DF2A1B8782009A62F8 /* Assets.xcassets */; };
 		8BED50E32A1B8782009A62F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BED50E22A1B8782009A62F8 /* Preview Assets.xcassets */; };
+		8BED50EA2A1B87F7009A62F8 /* FirebaseAccsess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED50E92A1B87F7009A62F8 /* FirebaseAccsess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8BED50DD2A1B8780009A62F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8BED50DF2A1B8782009A62F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BED50E22A1B8782009A62F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BED50E92A1B87F7009A62F8 /* FirebaseAccsess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAccsess.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				8BED50DD2A1B8780009A62F8 /* ContentView.swift */,
 				8BED50DF2A1B8782009A62F8 /* Assets.xcassets */,
 				8BED50E12A1B8782009A62F8 /* Preview Content */,
+				8BED50E92A1B87F7009A62F8 /* FirebaseAccsess.swift */,
 			);
 			path = FirebaseTest;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BED50DE2A1B8780009A62F8 /* ContentView.swift in Sources */,
+				8BED50EA2A1B87F7009A62F8 /* FirebaseAccsess.swift in Sources */,
 				8BED50DC2A1B8780009A62F8 /* FirebaseTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
