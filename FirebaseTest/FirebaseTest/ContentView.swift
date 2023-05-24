@@ -14,6 +14,11 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+          Button("Firebase RealTimeDatabase Test") {
+            print("")
+            let fbRealtimeDatabase = FirebaseAccess()
+            fbRealtimeDatabase.setData()
+          }
         }
         .padding()
     }
