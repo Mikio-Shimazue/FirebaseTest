@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8B7E68442A1B8FA000A1722B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8B7E68432A1B8FA000A1722B /* FirebaseDatabase */; };
 		8B81B1302A233525001DEFBE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8B81B12F2A233525001DEFBE /* FirebaseStorage */; };
+		8BBF406B2A26007000B34A03 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF406A2A26007000B34A03 /* ImagePickerView.swift */; };
 		8BED50DC2A1B8780009A62F8 /* FirebaseTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED50DB2A1B8780009A62F8 /* FirebaseTestApp.swift */; };
 		8BED50DE2A1B8780009A62F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED50DD2A1B8780009A62F8 /* ContentView.swift */; };
 		8BED50E02A1B8782009A62F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BED50DF2A1B8782009A62F8 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8BBF406A2A26007000B34A03 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		8BED50D82A1B8780009A62F8 /* FirebaseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BED50DB2A1B8780009A62F8 /* FirebaseTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTestApp.swift; sourceTree = "<group>"; };
 		8BED50DD2A1B8780009A62F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				8BED50DF2A1B8782009A62F8 /* Assets.xcassets */,
 				8BED50E12A1B8782009A62F8 /* Preview Content */,
 				8BED50E92A1B87F7009A62F8 /* FirebaseAccsess.swift */,
+				8BBF406A2A26007000B34A03 /* ImagePickerView.swift */,
 			);
 			path = FirebaseTest;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBF406B2A26007000B34A03 /* ImagePickerView.swift in Sources */,
 				8BED50DE2A1B8780009A62F8 /* ContentView.swift in Sources */,
 				8BED50EA2A1B87F7009A62F8 /* FirebaseAccsess.swift in Sources */,
 				8BED50DC2A1B8780009A62F8 /* FirebaseTestApp.swift in Sources */,
@@ -297,6 +301,7 @@
 				DEVELOPMENT_TEAM = 4RQ5VWKQPU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "カメラロールを利用するため";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -326,6 +331,7 @@
 				DEVELOPMENT_TEAM = 4RQ5VWKQPU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "カメラロールを利用するため";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
