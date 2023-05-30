@@ -23,12 +23,10 @@ class FirebaseAccess {
     ref.child("users").setValue(["username": "ame"])
   }
   
-  func setImage() {
+  func setImage(url: URL) {
     let path =  "gs://schedule-bool.appspot.com/test/testUp.png"
     let imageRef = storage.reference().child(path)
     
-    //  ローカルファイルURL
-    guard let url = URL(string: "/Users/shimazun/development/shimawork/FirebaseTest/FirebaseTest/22739856.png") else { return }
     //  ローカルファイルをアップロード
     let uploadTask = imageRef.putFile(from: url)
     

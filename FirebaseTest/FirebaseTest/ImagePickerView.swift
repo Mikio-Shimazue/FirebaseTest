@@ -34,9 +34,25 @@ struct ImagePickerView: UIViewControllerRepresentable {
     /// カメラロールで選択した画像をUIIMageに設定する
     /// - Parameter info: <#info description#>
     func getUIImage(didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+      var uiImage: UIImage?
       if let image = info[.editedImage] as? UIImage {
-        parent.image = image
+        uiImage = image
       } else if let image = info[.originalImage] as? UIImage {
+        uiImage = image
+      }
+      
+      if let image = uiImage {
+        //  JPEGファイル作成
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let fileName = "sample.jpg"
+        let fileURL = path.appendingPathComponent(fileName)
+        image.saveJpegFile(fileURL)
+        
+        //  JPEGファイルをFirebaseStrageへアップ
+        let firebaseAccess = FirebaseAccess()
+        
+        firebaseAccess.setImage(url: fileURL)
+        
         parent.image = image
       }
       parent.presentationMode.wrappedValue.dismiss()
@@ -65,3 +81,14 @@ struct ImagePickerView: UIViewControllerRepresentable {
   }
 }
 
+extension UIImage {
+  internal func saveJpegFile(_ fileURL: URL) -> Bool {
+    let jpgImageData = self.jpegData(compressionQuality: 1.0)
+    do {
+      try jpgImageData!.write(to: fileURL)
+    } catch {
+      return false
+    }
+    return true
+  }
+}
